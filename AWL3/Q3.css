@@ -1,0 +1,11 @@
+
+.classe {
+    display: flex;
+    flex-direction: row;
+    gap: 2em;
+    border: 1px e;
+}
+
+.nav-bar {
+    width: fit-content;
+}

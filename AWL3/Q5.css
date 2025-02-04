@@ -1,0 +1,43 @@
+body {
+    width: 60%;
+    min-width: 55%;
+    margin: auto;
+}
+
+
+.te {
+    text-align: center;
+    border-bottom: 5px dotted black;
+
+}
+
+.drag {
+    margin-top: 1em;
+    float: left;
+
+}
+
+.div {
+    border: 2px solid black;
+    padding: 23px;
+    float: left;
+    margin: 0 5em;
+}
+
+.sin {
+    text-align: right;
+    border-bottom: 1px solid;
+}
+
+.ota {
+    width: 60%;
+    float: right;
+}
+
+.el {
+    text-align: right;
+    border-bottom: 1px solid black;
+    width: 60%;
+    float: right;
+
+}
