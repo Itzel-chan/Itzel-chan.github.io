@@ -46,4 +46,57 @@
         font-size: 1.2rem;
     }
 }
+/* Estilo do título do trailer */
+.trailer-titulo {
+    flex: 1 1 100%;
+    background-color: #043657;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
 
+.trailer-titulo h1 {
+    font-size: 2rem; 
+}
+
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .trailer-titulo h1 {
+        font-size: 2.5rem; 
+    }
+}
+
+
+.embed-responsive {
+    position: relative;
+    display: block;
+    width: 100%;
+    padding: 0;
+    overflow: hidden;
+    border: 0;
+    max-width: 100%;
+}
+
+
+.embed-responsive iframe {
+    width: 100%;
+    height: 500px;  
+    max-width: 100%;
+    border: 0;
+    border-radius: 8px; 
+}
+
+
+@media (max-width: 768px) {
+    .embed-responsive iframe {
+        height: 400px; 
+    }
+}
+
+  
+ 
+  
