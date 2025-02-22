@@ -97,7 +97,7 @@ body {
     width: 100%;
 }
 
-@media(width <=900px) {
+@media(width <=800px) {
     .nomeLogo h2 {
         font-size: 1rem;
 
@@ -114,6 +114,15 @@ body {
         display: none;
 
     }
+
+}
+
+@media(width <=320px){
+    .nomeLogo h2 {
+        font-size: .5rem;
+
+    }
+
 
 }
 
