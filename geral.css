@@ -99,12 +99,12 @@ body {
 
 @media(width <=900px) {
     .nomeLogo h2 {
-        font-size: 2rem;
+        font-size: 1rem;
 
     }
 }
 
-@media(width <=900px) {
+@media(width <=860px) {
 
     .dropdown .dropdown-toggle {
         display: block;
