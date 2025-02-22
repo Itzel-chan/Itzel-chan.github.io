@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Slabo+27px&family=Tapestry&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+
+    background-color: black;
+    font-family:Tapestry;
+}
+
+
+.header {
+
+    background-color: rgb(2, 2, 75);
+    width: 90vw;
+
+    left: 50%;
+    transform: translateX(-50%);
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    position: fixed;
+    z-index: 1;
+
+}
+
+.nomeLogo {
+
+    margin-left: 20px;
+    display: flex;
+    color: white;
+    align-items: center;
+
+}
+
+.nomeLogo h2 {
+    font-size: 2.5rem;
+
+}
+
+.logo-img {
+    filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(0%) hue-rotate(12deg) brightness(103%) contrast(101%);
+}
+
+.nav {
+    width: max-content;
+    position: absolute;
+    right: 8rem;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.nav .nav-item a {
+    color: white;
+    position: relative;
+}
+
+.nav .nav-item a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 1px;
+    background-color: white;
+    transition: all ease-in-out .3s;
+}
+
+
+
+.dropdown {
+    position: absolute;
+    /* border: 1px solid red; */
+    right: 60px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.dropdown .dropdown-toggle {
+    background-color: transparent;
+    border: none;
+    box-shadow: 0 0 10px white;
+    transition: ease-in-out .3s all;
+    display: none;
+}
+
+.dropdown .dropdown-toggle:hover {
+    box-shadow: 0 0 10px 5px white;
+
+}
+
+
+.nav .nav-item a:hover:after {
+    width: 100%;
+}
+
+@media(width <=900px) {
+    .nomeLogo h2 {
+        font-size: 2rem;
+
+    }
+}
+
+@media(width <=900px) {
+
+    .dropdown .dropdown-toggle {
+        display: block;
+    }
+
+    .nav {
+        display: none;
+
+    }
+
+}
+
+
+.Rodapé {
+    background-color: rgb(2, 2, 75);
+    width: 100%;
+    height: 16rem;
+    margin: auto;
+    bottom: 0;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    text-align: center;
+
+}
+
+
+.logo-rodape {
+    max-width: 15%;
+    height: auto;
+    display: inline-block;
+    filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(0%) hue-rotate(12deg) brightness(103%) contrast(101%);
+
+}
+
+.rodape-espaco {
+    height: 15rem;
+}
+
+
+.alert-box {
+    position: fixed;
+    bottom: 20px; 
+    left: 50%;
+    transform: translateX(-50%); 
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 15px 30px;
+    border-radius: 5px;
+    display: none; 
+    opacity: 0;
+    transition: opacity 0.5s ease, transform 0.5s ease;
+    z-index: 1000;
+    box-shadow: 0 0 10px #fff; 
+  }
+  
+  .alert-box.show {
+    display: block;
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
+  }
+  
+  .alert-content {
+    text-align: center;
+    font-size: 20px;
+  }
+  
+  
