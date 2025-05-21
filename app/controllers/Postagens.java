@@ -41,5 +41,6 @@ public class Postagens extends Controller {
         Postagem postagem = Postagem.findById(id);
         postagem.delete();
         listar(mensagem);
+        
     }
 }

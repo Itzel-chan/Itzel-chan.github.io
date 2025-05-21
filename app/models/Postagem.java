@@ -27,5 +27,4 @@ public class Postagem extends Model {
         return true;
 
     }
-
 }
