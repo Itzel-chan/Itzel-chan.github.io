@@ -1,0 +1,19 @@
+#{extends 'main.html' /}
+#{set title:'Detalhar' /}
+
+
+<div class="postagem">
+    <div class="cabecalho">
+        <div class="circulo"></div>
+        <div class="autor">${postagem.autor}</div>
+
+    </div>
+    <div class="corpo">
+        <div class="titulo">
+            ${postagem.titulo}
+        </div>
+        <!-- <div class="conteudo">${postagem.conteudo}</div> -->
+        <div class="conteudo">${postagem.conteudo}</div>
+        <div class="data"> ${postagem.data.getHours()}:${postagem.data.getMinutes()} &bull;             ${postagem.data.format('dd/MM/yyyy')}</div>
+    </div>
+</div>

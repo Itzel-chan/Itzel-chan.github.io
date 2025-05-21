@@ -1,0 +1,34 @@
+#{extends 'main.html' /}
+#{set title:'listagem de postagens' /}
+
+
+<table class="tabela">
+
+    <thead>
+        <tr>
+            <th colspan="5" class="titulo">Postagens</th>
+        </tr>
+        <tr>
+            <th>Titulo</th>
+            <th>Autor</th>
+            <th>Data</th>
+            <th>Conteúdo</th>
+            <th>Remoção</th>
+        </tr>
+    </thead>
+
+    <tbody>
+
+        #{list items: postagens, as: 'postagem'}
+        <tr>
+            <td>${postagem.titulo}</td>
+            <td>${postagem.autor}</td>
+            <td>${postagem.data.format('dd/MM/yyyy')}</td>
+            <td><a href="@{Postagens.detalhar(postagem.id)}">Ver</a></td>
+            <td><a href="@{Postagens.remover(postagem.id)}">Remover</a></td>
+        </tr>
+        #{/list}
+
+    </tbody>
+
+</table>
